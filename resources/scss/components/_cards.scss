@@ -1,0 +1,75 @@
+@use 'abstracts/variables' as *;
+@use 'abstracts/responsive' as *;
+
+.card{
+    display: flex;
+    flex-flow: column;
+    max-width: 55rem;
+    max-height: 62rem;
+    margin: 0 auto;
+    text-align: left;
+    border-radius: 15px;
+    background-color: $white;
+    overflow: hidden;
+
+    @include media('>medium', 'screen'){
+        flex-flow: row;
+
+        &__media, img{
+            height: 100%;
+        }
+    }
+
+    &__thumbnail{
+        flex: 1;
+    }
+
+    &__description{
+        flex: 3;
+        margin: 2em 0;
+        padding: 0 2em;
+        color: $darkGrayishBlue;
+        
+        @include media('>medium', 'screen'){
+            flex: 1;
+        }
+    
+        fieldset{
+            border: none;
+        }
+    }
+
+    &__subtitle{
+        font-size:$fs-base;
+        font-family: $ff-base;
+        text-transform: uppercase;
+        letter-spacing: 0.3rem;
+        border: none;
+    }
+
+    &__title{
+        color: $darkBlue;
+    }
+
+    &__prices{
+        display: flex;
+        align-items: center;
+    }
+
+    &__final-price,
+    &__discount{
+        flex: 1;
+        margin: 0;
+    }
+
+    &__final-price{
+        font-size: $fs-title;
+        font-family: $ff-title;
+        color: $darkCyan;
+    }
+
+    &__discount{
+        text-decoration: line-through;
+        padding-left: 1.2em;
+    }
+}

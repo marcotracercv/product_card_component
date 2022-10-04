@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Card Component</title>
+    <link rel="icon" href="build/img/favicon-32x32.webp" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/fe9d49fd59.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="build/css/main.css" />
+  </head>
+  <body>
+    <main class="wrap h-100 center">
+      <div class="card">
+        <div class="card__thumbnail">
+          <picture class="card__media">
+            <source
+              srcset="build/img/image-product-mobile.avif"
+              media="(max-width:768px)"
+            />
+            <source
+              srcset="build/img/image-product-desktop.avif"
+              media="(min-width:768px)"
+            />
+            <source
+              srcset="build/img/image-product-mobile.webp"
+              media="(max-width:768px)"
+            />
+            <source
+              srcset="build/img/image-product-desktop.webp"
+              media="(min-width:768px)"
+            />
+            <img
+              src="build/img/image-product-desktop.jpg"
+              alt="perfume image"
+            />
+          </picture>
+        </div>
+        <div class="card__description">
+          <form action="#">
+            <fieldset>
+              <legend class="card__subtitle">perfume</legend>
+              <h1 class="card__title">Gabrielle Essence Eau De Parfum</h1>
+              <p class="card__text">
+                A floral, solar and voluptuous interpretation composed by
+                Olivier Polge, Perfumer-Creator for the House of CHANEL
+              </p>
+              <div class="card__prices">
+                <p class="card__final-price">$149.99</p>
+                <p class="card__discount">$169.99</p>
+              </div>
+              <button action="#" class="card__action">
+                <i class="fa-solid fa-cart-shopping"></i>Add to Cart
+              </button>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

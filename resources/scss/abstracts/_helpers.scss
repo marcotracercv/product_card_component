@@ -1,0 +1,16 @@
+.wrap{
+    max-width: 144rem;
+    min-width: 32rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 1.5em;
+}
+
+.h-100{
+    height: 100vh;
+}
+
+.center{
+    display: grid;
+    place-items: center;
+}
